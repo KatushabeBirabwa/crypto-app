@@ -1,5 +1,7 @@
 // src/components/CryptoDashboard.tsx
 
+import "./CryptoDashboard.css";
+
 import React, { useEffect, useState } from "react";
 
 import axios from "axios"; // Import axios for API requests

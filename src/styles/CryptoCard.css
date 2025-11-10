@@ -3,7 +3,7 @@
 /* Crypto Dashboard Styles */
 .crypto-dashboard {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color:rgba(210, 208, 190, 1);
     padding: 20px;
   }
   
@@ -55,3 +55,4 @@
     }
   }
   
+  //stare 

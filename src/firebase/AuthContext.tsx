@@ -1,15 +1,13 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { User, getAuth, onAuthStateChanged } from "firebase/auth";
 
-// Define types for the context
 interface AuthContextType {
   user: User |null;
 }
 
-// Create the Auth Context with undefined default value
+
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-// AuthProvider Component
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
   const auth = getAuth();

@@ -6,8 +6,6 @@ import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import { auth } from "../firebase/firebaseConfig";
 import { useNavigate } from "react-router-dom";
 
-// Correct the path if necessary
-
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,7 +16,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      navigate("/login");  // Redirect to login after successful signup
+      navigate("/login");
     } catch (error) {
       setError("Failed to create account. Please try again.");
     }
